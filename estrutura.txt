@@ -1,0 +1,32 @@
+./
+├── Docs
+│   └── diagrama-de-funcionamento.png
+├── ESP8266
+│   └── measure
+│       └── measure.ino
+├── estrutura.txt
+└── node
+    ├── config
+    │   ├── database.sql
+    │   └── db.js
+    ├── controllers
+    │   └── measureController.js
+    ├── models
+    │   └── measureModel.js
+    ├── package.json
+    ├── package-lock.json
+    ├── public
+    │   ├── assets
+    │   │   └── temperature-half-solid.svg
+    │   ├── css
+    │   │   └── style.css
+    │   └── js
+    │       └── script.js
+    ├── routes
+    │   └── measureRoutes.js
+    ├── server.js
+    ├── testes.http
+    └── views
+        └── index.ejs
+
+14 directories, 16 files

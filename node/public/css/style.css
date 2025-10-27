@@ -1,0 +1,97 @@
+/* Definições de Cores e Fontes */
+:root {
+    --primary-color: #3498db; /* Azul suave para o título */
+    --background-color: #f2f2f2;
+    --text-color: #2c3e50;
+}
+
+/* Reset Básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Corpo da Página */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+main {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    gap: 20px;
+}
+
+/* Estilo do Cabeçalho da Página */
+.page-header {
+    background-color: var(--primary-color);
+    height: 15vh;
+    max-height: 180px;
+    min-height: 110px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.page-header h1 {
+    color: white; /* Cor do texto no header */
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold; /* Fonte mais leve */
+}
+
+/* Área de Conteúdo Principal*/
+.content-area {
+    width: 80%;
+    max-width: 700px;
+    min-width: 340px;
+    height: auto;
+    max-height: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid silver;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#chart {
+    width: 90%;
+    min-width: 320px;
+    height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#chart .fa-solid {
+    font-size: 1.3rem;
+}
+
+main .content-area p {
+    width: 90%;
+    min-width: 320px;
+    text-align: left;
+}
+
+main .content-area:nth-child(2) {
+    gap: 5px;
+    justify-content: space-around;
+}

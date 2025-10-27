@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Temperature</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/temperature-half-solid.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f0fa575447.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="page-header">
+        <h1>Monitoramento de Temperatura do ESP8266</h1>
+    </header>
+    <main>
+        <section class="content-area">
+            <section id="chart"></section>
+        </section>
+        <section class="content-area">
+            <p>Maior valor registrado: </p>
+            <p>Menor valor registrado: </p>
+        </section>
+    </main>
+    <!--Inclui a biblioteca para o gráfico-->
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js?locale=pt-br"></script>
+    <!--Script para construção do gráfico-->
+    <script src="js/script.js"></script>
+</body>
+</html>

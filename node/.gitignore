@@ -1,0 +1,8 @@
+#pacotes do node (podem ser reinstalados com "npm i")
+node_modules/
+
+#variáveis de ambiente
+.env
+
+#arquivos de teste
+testes.http
