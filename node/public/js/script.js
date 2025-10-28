@@ -3,7 +3,7 @@ async function getTemperatures() {
     try {
         const getData = await fetch("/data/temperatures");
         const data = await getData.json();
-        return data.message;
+        return data.data;
     } catch (error) {
         document.getElementById("chart").innerHTML = "<p>Servidor não encontrado...</p>";
     }   
@@ -47,6 +47,8 @@ getTemperatures().then((apiData) => {
             }
         };
         Plotly.newPlot("chart", data, layout);
+        document.getElementById("max-value").innerHTML += ` ${Math.max(...values)} °C`;
+        document.getElementById("min-value").innerHTML += ` ${Math.min(...values)} °C`;
     } else {
         document.getElementById("chart").innerHTML = "<p>Não há dados para serem exibidos.</p>";
     }

@@ -2,20 +2,23 @@ const model = require("../models/measureModel");
 
 //Retorna os dados em JSON das medições nas ultimas 12 horas
 exports.getTemperatures = async (req, res) => {
+    const {start_date, end_date} = req.query;
     try {
-        const data = await model.getTemperatures();
+        const data = await model.getTemperatures(start_date, end_date);
         res.status(200).json({
             status: "Success",
-            message: data
+            message: "Temperatures fetched successfully",
+            data: data
         });
     } catch (error) {
         console.log(error);
         return res.status(500).json ({
             status: "Error",
-            message: "Internal server error"
+            message: "Internal server error",
+            data:[]
         });
     }
-} 
+}
 
 //Retorna a página web com a "Dashboard"
 exports.getDataPage = (req, res) => {
